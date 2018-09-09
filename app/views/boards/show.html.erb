@@ -1,0 +1,11 @@
+<h1>Welcome to <%= @board.name %> board</h1>
+
+<table class="grid_table">
+	<% @board.rows.times do |row| %>
+	  <tr>
+		  <% @board.columns.times do |column| %>
+	      <td class="grid_table_data"></td>
+		  <% end %>
+	  </tr>
+	<% end %>
+</table>
