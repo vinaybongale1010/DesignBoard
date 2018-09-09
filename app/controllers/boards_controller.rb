@@ -1,6 +1,8 @@
 class BoardsController < ApplicationController
+
+  before_action :create_random_user, only: :show
+
   def show
-  	create_random_user
   	@board = Board.first
   end
 
